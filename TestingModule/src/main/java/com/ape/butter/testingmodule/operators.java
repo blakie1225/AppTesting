@@ -3,6 +3,11 @@ package com.ape.butter.testingmodule;
 public class operators {
     public static void main(String[] args) {
 
+        //https://docs.oracle.com/javase/tutorial/java/nutsandbolts/opsummary.html
+
+        //Java Operator Precedence Table
+        //http://cs.bilkent.edu.tr/~guvenir/courses/CS101/op_precedence.html
+
         //Equal operator places everything to the right of it into the variable to the left
         //Plus operator adds the number to the right of it to the number on the left
         int result = 1 + 2;
@@ -75,11 +80,18 @@ public class operators {
 
         int secondTopScore = 200;
 
-        //the && lets you compare two things noth must be true for it to work
-        if (topScore > secondTopScore && topScore < 100)
-            System.out.println("greater than topscore and less than 100");
+        //the && lets you compare two things, both must be true for it to work
+        if ((topScore > secondTopScore) && (topScore < 100))
+            System.out.println("greater than top score and less than 100");
 
+        //the || lets you compare two things, only one must be true for it to work
+        if ((topScore > secondTopScore) || (topScore < 100))
+            System.out.println("greater than top score and less than 100");
+        boolean isCar = false;
 
+        //If isCar equals true, return true. otherwise return false
+        // If car is == to value then var will now equal value. other var will equal other value
+        boolean wasCar = isCar ? true : false;
 
 
     }
